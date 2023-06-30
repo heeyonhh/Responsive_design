@@ -1,0 +1,779 @@
+@charset "utf-8";
+
+@media all and (max-width:1470px){
+    #header_center #logo{
+        width: 15%;
+    }
+    #header_center #nav_menu{
+        width: 68%;
+    }
+    #header_center #nav_right{
+        width: 17%;
+    }
+    #header_center #nav_right ul li a{
+        font-size: 0.8em;
+        padding-right: 5px;
+        line-height: 7.5;
+    }
+    #header_center #nav_right ul li:last-child{
+        margin-right: 10px;
+    }
+
+    /* 메뉴 */
+    .depth2, .depth2_2, .depth2_3, .depth2_4, .depth2_5, .depth2_6{
+        left: 17%;
+    }
+
+    /* 비디오 */
+    section{
+        height: 827px;
+    }
+    section #section_center{
+        height: 827px;
+    }
+    section #section_center .item video{
+        height: 827px;
+    }
+    section #section_center .item:first-child,
+    section #section_center .item:nth-child(2),
+    section #section_center .item:nth-child(3){
+        height: 827px;
+    }
+
+    /* 콘테이너 */
+    #container{
+        height: 1000px;
+    }
+    .container_title{
+        font-size: 2.5em;
+    }
+    .conline2{
+        width: 50%;
+    }
+    .cih1{
+        width: 470px;
+    }
+    .cih2{
+        width: 620px;
+    }
+    .container_logo2{
+        top: 68%;
+    }
+    .container_2_t{
+        top: 76%;
+    }
+    .container_img2 a{
+        top: 86%;
+    }
+    .container_logo1{
+        top: 48%;
+        right: 35%;
+    }
+    .container_1_t{
+        top: 64%;
+    }
+    .container_img1 a{
+        top: 78%;
+        right: 75%;
+    }
+    .container_logo3{
+        top: 71%;
+    }
+
+    /* 푸터 */
+    .f_info2{
+        height: 5vh;
+    }
+}
+
+@media all and (max-width:1440px){
+    section, section #section_center, section #section_center .item:first-child, section #section_center .item:nth-child(2), section #section_center .item:nth-child(3), section #section_center .item video{
+        height: 810px;
+    }
+}
+
+@media all and (max-width:1024px){
+    #header_center #logo{
+        width: 17%;
+    }
+    #header_center #logo a img{
+        width: 130px;
+    }
+    #header_center #nav_menu{
+        width: 75%;
+    }
+    #header_center #nav_menu ul li a{
+        font-size: 1em;
+        padding: 20px;
+        line-height: 3.5;
+    }
+    #header_center #nav_right{
+        width: 8%;
+    }
+    #header_center #nav_right ul li a{
+        font-size: 0.85em;
+        line-height: 7;
+    }
+    .nrm, .nrg{
+        display: none;
+    }
+
+    .depth2 li, .depth2_2 li, .depth2_3 li, .depth2_4 li, .depth2_5 li, .depth2_6 li{
+        font-size: 1em;
+    }
+
+    /* 메뉴 */
+    .depth2, .depth2_2, .depth2_3, .depth2_4, .depth2_5, .depth2_6{
+        left: 19%;
+    }
+
+    #header_center #nav_menu ul li:hover .product, #header_center #nav_menu ul li:hover .service, #header_center #nav_menu ul li:hover .infor, #header_center #nav_menu ul li:hover .commu,
+    #header_center #nav_menu ul li:hover .news,
+    #header_center #nav_menu ul li:hover .nexentire{
+    height: 315px;
+    border-top: 1px solid rgb(0, 255, 234);
+    }
+
+
+    /* 비디오 */
+    section{
+        height: 576px;
+    }
+    section #section_center{
+        height: 576px;
+    }
+    section #section_center .item video{
+        height: 576px;
+    }
+    section #section_center .item:first-child,
+    section #section_center .item:nth-child(2),
+    section #section_center .item:nth-child(3){
+        height: 576px;
+    }
+
+    .vprev, .vnext{
+        transform: scale(0.8);
+    }
+
+    /* 타이어 찾기 영역 */
+    .car_find{
+        width: 550px;
+        gap: 35px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .num, .car, .size{
+        width: 140px;
+    }
+    .cf_w{
+        font-size: 1.1em;
+    }
+    .car i{
+        transform: scale(0.6);
+        left: 32%;
+    }
+    .numi1, .numi2{
+        transform: scale(0.8);
+    }
+    .size img {
+        left: 65%;
+    }
+
+    /* 콘테이너 */
+    #container{
+        height: 750px;
+    }
+    .container_title{
+        font-size: 1.8em;
+    } 
+    .cih1{
+        width: 400px;
+    }
+    .cih2{
+        width: 450px;
+    }
+    .container_logo2{
+        transform: scale(0.8);
+        top: 66%;
+        left: -3%;
+    }
+    .container_2_t{
+        transform: scale(0.8);
+        top: 76%;
+        left: 2%;
+    }
+    .container_img2 a{
+        top: 86%;
+    }
+    .container_logo1{
+        transform: scale(0.8);
+        top: 48%;
+        right: 33%;
+    }
+    .container_1_t{
+        transform: scale(0.8);
+        top: 64%;
+        left: -5%;
+    }
+    .container_img1{
+        top: 35%;
+    }
+    .container_img1 a{
+        top: 78%;
+        right: 73%;
+    }
+    .container_logo3{
+        transform: scale(0.8);
+        top: 71%;
+        right: 3%;
+    }
+    .container_3_t{
+        transform: scale(0.8);
+        left: -5.5%;
+    }
+    .container_img3 a{
+        bottom: 7%;
+        left: 5%;
+    }
+
+    /* 메인블록 */
+    #main_block{
+        height: 90vh;
+    }
+    .main_block_title{
+        padding-left: 3%;
+        height: 9vh;
+    }
+    .main_block_title ul li:first-child{
+        font-size: 2em;
+    }
+    .main_block_title ul li:last-child{
+        font-size: 1em;
+    }
+    .main_block_middle{
+        height: 30vh;
+        gap: 5px;
+    }
+    .mbm.mbm01,.mbm.mbm02,.mbm.mbm03,.mbm.mbm04{
+        transform: scale(0.8);
+    }
+    .main_block_bottom{
+        height: 10vh;
+        padding: 3% 0 0 3%;
+    }
+    .main_block_bottom ul li:first-child{
+        font-size: 2em;
+    }
+    .main_block_bottom ul li:last-child{
+        font-size: 1em;
+    }
+    .main_block_w{
+        transform: scale(0.8);
+    }
+    
+    /* 서비스영역 */
+    .ser_, .ser_name{
+        font-size: 1.3em;
+    }
+    .ser_name span{
+        border-bottom: 3px solid transparent;
+    }
+    .ser_name span:hover{
+        border-bottom: 3px solid rgb(0, 255, 234);
+    }
+    .img img{
+        box-sizing: border-box;
+    }
+
+    /* 푸터 */
+    .footer_left{
+        width: 100%;
+    }
+    .footer_left ul li{
+        font-size: 0.9em;
+    }
+    .footer_b_left{
+        width: 100%;
+    }
+    .f_info1 li, .f_info2 li{
+        font-size: 0.9em;
+    }
+    .f_info2{
+        height: 2vh;
+    }
+    .logo img{
+        transform: scale(0.8);
+    }
+
+    /* 팝업 */
+    #pop_center{
+        left: -3.7%;
+    }
+}
+
+@media all and (max-width:768px){
+    #today{
+        display: none;
+    }
+ 
+    /* 헤더 */
+    header{
+        display: none;
+    }
+
+    .mo_header, .mo_menu{
+        display: block;
+    }
+
+    .mo_header{
+        width: 768px;
+        height: 80px;
+        line-height: 6.5;
+        padding-left: 30px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        box-sizing: border-box;
+        z-index: 999999;
+    }
+    
+    /* 모바일 햄버거 버튼 */
+    .ham{
+        width: 40px;
+        height: 25px;
+    }
+
+    .ham:hover .line1, .ham:hover .line2, .ham:hover .line3{
+        background-color: #ffffff;
+    }
+
+    .line1, .line2, .line3{
+        z-index: 9999999;
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff90;
+        position: fixed;
+        right: 5%;
+    }
+
+    .line1{
+        top: 3%;
+    }
+    .line2{
+        top: 4.5%;
+    }
+    .line3{
+        top: 6%;
+    }
+
+    /* 모바일 쉐도우 */
+    .bg-shadow{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        display: none;
+        z-index: 99999999;
+    }
+
+    .bg-shadow.active{
+        display: block;
+    }
+
+    /* 메뉴 */
+    .mo_menu{
+        width: 60%;
+        height: 100%;
+        display: block;
+        z-index: 999999999999;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        transition: all 2s;
+        display: none;
+    }
+
+    .mo_menu.active{
+        display: block;
+    }
+
+    .mo_menu ul li a{
+        width: 100%;
+        display: block;
+        padding: 20px;
+        color: #ffffff;
+        background-color: #000000;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+    }
+
+    .mo_menu ul li:hover a{
+        border-bottom: 2px solid rgb(0, 255, 234);
+    }
+
+    .mo_sub{
+        display: none;
+    }
+
+    .mo_sub li{
+        width: 100%;
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #000000;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    .mo_sub li:hover{
+        color: rgb(0, 255, 234);
+    }
+
+    .mo_close{
+        color: #ffffff;
+        position: fixed;
+        top: 2%;
+        left: 5%;
+    }
+
+    /* 섹션 */
+
+    section{
+        height: 70px;
+    }
+    section #section_center{
+        height: 50vh;
+    }
+    section #section_center .item{
+        display: none;
+    }
+    section #section_center .video_arrow{
+        display: none;
+    }
+
+    /* 찾기 섹션 */
+    .find_section{
+        width: 100%;
+        height: 50vh;
+        background-color: #313131
+    }
+
+    .car_find{
+        background-color: #313131;
+        width: 80%;
+        height: 300px;
+        top: 25%;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        border-radius: 0;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .car_find:hover{
+        background-color: #313131
+    }
+
+    .num, .car, .size{
+        width: 280px;
+        height: 100px;
+        display: flex;
+        background-color: #ffffffa6;
+        border-radius: 40px;
+        padding: 5px 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .num:hover, .car:hover, .size:hover{
+        background-color: #ffffff;
+    }
+
+    .num img, .car i, .size img{
+        display: none;
+    }
+    
+    .tiresearch{
+        font-size: 0.8em;
+    }
+
+    .cf_w{
+        font-size: 1.2em;
+    }
+
+    /* 팝업 */
+
+    #pop #pop_center{
+        transform: scale(0.8);
+        left: -13%;
+        padding: 10px;
+        width: 120%;
+        height: 800px;
+    }
+
+    #pop_close{
+        width: 100%;
+        top: 4%;
+        left: 50%;
+    }
+
+    .pop_num, .pop_car, .pop_size{
+        height: 60px;
+        font-size: 1.1em;
+        padding: 10px 0;
+        border-radius: 0;
+        background-color: transparent;
+        color: #313131;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .con_car .car_table_wrap .cate{
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .raef{
+        gap: 10px;
+        padding: 15px 0;  
+    }
+
+    .catecarall{
+        gap: 5px;
+        padding: 80px 0 0 0;
+    }
+
+    .catecarall .raef1{
+        gap: 10px;
+    }
+
+    .con_size_wrap{
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* 컨테이너 */
+
+    #container{
+        height: 800px;
+    }
+
+    .conline2{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .container_img_wrap{
+        width: 360px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .container_img1, .container_img2, .container_img3, .container_logo1, .container_logo2, .container_logo3, .container_1_t, .container_2_t, .container_3_t, .container_img1 a, .container_img2 a, .container_img3 a{
+        position: unset;
+    }
+
+    .container_img1, .container_img2, .container_img3{
+        width: 360px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-sizing: border-box;
+        transition: all 1s ease;
+        transform: scale(1);
+    }
+
+    .cih1, .cih2, .cih3{
+        display: none;
+    }
+
+    .container_img1{
+        background-image: url(../img/m_container_img.jpg);
+    }
+
+    .container_img2{
+        background-image: url(../img/m_container_img2.jpg);
+    }
+
+    .container_img3{
+        background-image: url(../img/m_container_img3.jpg);
+    }
+
+    .container_img1:hover, .container_img2:hover, .container_img3:hover{
+        transform: scale(1.2);
+    }
+
+    .container_logo1, .container_logo2, .container_logo3{
+        width: 200px;
+    }
+    .container_1_t, .container_2_t, .container_3_t{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .container_3_t{
+        font-size: 0.9em;
+    }
+
+    /* 메인블럭 */
+    .main_block_w{
+        display: none;
+    }
+
+    #main_block{
+        height: 150vh;
+    }
+
+    .main_block_title{
+        padding: 7%;
+    }
+
+    .main_block_middle{
+        height: 130vh;
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .main_block_bottom{
+        display: none;
+    }
+
+    /* 서비스 이미지 영역 */
+
+    #service{
+        height: 480px;
+    }
+
+    .seriv{
+        width: 50%;
+        height: 160px;
+    }
+
+    .seriv img{
+        width: 100%;
+    }
+
+    .ser_{
+        font-size: 1em;
+        top: 30%;
+    }
+
+    .ser_name{
+        font-size: 0.8em;
+        bottom: 30%;
+    }
+
+    /* 푸터 */
+    .footer_top{
+        height: 45vh;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer_left ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer_bottom{
+        margin-top: 0;
+        height: 35vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .f_info1{
+        height: 10vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f_info2{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_bottom2{
+        height: 7vh;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .logo{
+        margin: 15px;
+    }
+}
+
+@media all and (max-width:428px){
+    /* 컨테이너 영역 */
+    .container_title{
+        font-size: 1.5em;
+    }
+
+    /* 메인블록 영역 */
+    #main_block{
+        height: 125vh;
+    }
+    .main_block_middle{
+        height: 110vh;
+    }
+
+    /* 서비스 영역 */
+    .seriv img{
+        width: 130%;
+    }
+}
+
+@media all and (max-width:375px){
+    .car_find{
+        scale: 0.8;
+    }
+    /* 컨테이너 영역 */
+    .container_title{
+        font-size: 1.2em;
+    }
+    /* 메인블록 */
+    #main_block{
+        height: 130vh;
+    }
+    .main_block_middle{
+        height: 110vh;
+    }
+
+    /* 푸터 */
+    .footer_top{
+        height: 55vh;
+    }
+    .footer_bottom{
+        height: 45vh;
+    }
+}

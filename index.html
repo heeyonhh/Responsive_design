@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NEXEN TIRE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/modernizr-3.5.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
+</head>
+
+<body>
+    <!-- 팝업 -->
+    <div id="pop">
+        <div id="pop_center">
+            <div id="pop_close">
+                <a href="#none"><img src="./img/popclose.png" alt="popclose"></a>
+            </div>
+            <div id="pop_wrap">
+
+                <div class="pop_button">
+                    <button class="pop_num active">차량번호로 찾기</button>
+                    <button class="pop_car">차종으로 찾기</button>
+                    <button class="pop_size">사이즈로 찾기</button>
+                </div>
+
+                <div class="con_num searchform active">
+                    <div class="num_img_wrap">
+                        <img src="./img/num_search.png" alt="num_search">
+                    </div>
+                    <div class="num_form_wrap">
+                        <div class="num_form">
+                            <div class="label">차량번호</div>
+                            <div class="input_wrap"><input type="text" id="numcarinput"
+                                    placeholder="차랑번호를 입력해주세요. 예)11차2345" maxlength="9"></div>
+                        </div>
+                        <div class="form_item">
+                            <div class="label">소유주명</div>
+                            <div class="input_wrap"><input type="text" id="namecarinput" placeholder="이름을 입력해주세요."
+                                    maxlength="30"></div>
+                        </div>
+                        <button>확인</button>
+                    </div>
+                </div>
+
+                <div class="con_car searchform">
+                    <div class="car_table_wrap">
+                        <div class="cate_line"></div>
+                        <div class="cate">
+                            <div class="brand">브랜드</div>
+                            <i class="xi-angle-right"></i>
+                            <div class="catecar">차종</div>
+                            <i class="xi-angle-right"></i>
+                            <div class="catemodel">모델</div>
+                            <i class="xi-angle-right"></i>
+                            <div class="catefuel">연료</div>
+                            <i class="xi-angle-right"></i>
+                            <div class="catesize">사이즈</div>
+                        </div>
+                        <div class="cate_line"></div>
+                        <div class="raef">
+                            <span>전체</span>
+                            <span>ㄱ</span>
+                            <span>ㄴ</span>
+                            <span>ㄷ</span>
+                            <span>ㄹ</span>
+                            <span>ㅁ</span>
+                            <span>ㅂ</span>
+                            <span>ㅅ</span>
+                            <span>ㅇ</span>
+                            <span>ㅈ</span>
+                            <span>ㅊ</span>
+                            <span>ㅋ</span>
+                            <span>ㅌ</span>
+                            <span>ㅍ</span>
+                            <span>ㅎ</span>
+                        </div>
+                        <div class="cate_line"></div>
+                        <div class="catecarall">
+                            <div class="raef1">
+                                <span class="raef1_1">현대</span>
+                                <span class="raef1_2">기아</span>
+                                <span class="raef1_3">제네시스</span>
+                                <span class="raef1_4">쉐보레(대우)</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">르노</span>
+                                <span class="raef1_2">쌍용</span>
+                                <span class="raef1_3">벤츠</span>
+                                <span class="raef1_4">BMW</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">아우디</span>
+                                <span class="raef1_2">닛산</span>
+                                <span class="raef1_3">람보르기니</span>
+                                <span class="raef1_4">랜드로버</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">렉서스</span>
+                                <span class="raef1_2">로터스</span>
+                                <span class="raef1_3">벤츠</span>
+                                <span class="raef1_4">마세라티</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">미니</span>
+                                <span class="raef1_2">미쯔비시</span>
+                                <span class="raef1_3">벤틀리</span>
+                                <span class="raef1_4">볼보</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">시트로엥</span>
+                                <span class="raef1_2">애스턴마틴</span>
+                                <span class="raef1_3">인피니티</span>
+                                <span class="raef1_4">재규어</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">지프</span>
+                                <span class="raef1_2">캐딜락</span>
+                                <span class="raef1_3">크라이슬러</span>
+                                <span class="raef1_4">테슬라</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">도요타</span>
+                                <span class="raef1_2">토요타</span>
+                                <span class="raef1_3">페라리</span>
+                                <span class="raef1_4">포드</span>
+                            </div>
+                            <div class="raef1">
+                                <span class="raef1_1">포르쉐</span>
+                                <span class="raef1_2">폭스바겐</span>
+                                <span class="raef1_3">푸조</span>
+                                <span class="raef1_4">피아트</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="con_size searchform">
+                    <div class="con_size_img">
+                        <img src="./img/size_search.jpg" alt="size_search">
+                    </div>
+                    <div class="con_size_table">
+                        <div class="con_size_wrap">
+                            <span class="ccb">단면폭</span>
+                            <span>></span>
+                            <span class="ccb2">편평비</span>
+                            <span>></span>
+                            <span class="ccb3">인치</span>
+                        </div>
+                        <ul class="cst">
+                            <li>145</li>
+                            <li>155</li>
+                            <li>165</li>
+                            <li>170</li>
+                        </ul>
+                        <ul class="cst">
+                            <li>175</li>
+                            <li>185</li>
+                            <li>195</li>
+                            <li>205</li>
+                        </ul>
+                        <ul class="cst">
+                            <li>215</li>
+                            <li>225</li>
+                            <li>235</li>
+                            <li>245</li>
+                        </ul>
+                        <ul class="cst">
+                            <li>255</li>
+                            <li>265</li>
+                            <li>275</li>
+                            <li>285</li>
+                        </ul>
+                        <ul class="cst">
+                            <li>295</li>
+                            <li>305</li>
+                            <li>315</li>
+                            <li>325</li>
+                        </ul>
+                        <ul class="cst">
+                            <li>335</li>
+                            <li>345</li>
+                            <li>355</li>
+                            <li>365</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 오늘하루보지않기 -->
+    <div id="today">
+        <div id="today_center">
+            <div id="today_banner">
+                <ul>
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div id="today_button_b" class="cf">
+                <ul>
+                    <li class="on">
+                        <a href="#none">1</a>
+                    </li>
+                    <li class="">
+                        <a href="#none">2</a>
+                    </li>
+                    <li class="">
+                        <a href="#none">3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="close">
+                <span>오늘 하루 열지 않기 <img src="./img/close.png" alt="close"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap">
+        <header>
+            <div id="header_center">
+                <div id="logo">
+                    <a href="index.html"><img src="./img/logo.png" width="170" alt="logo"></a>
+                </div>
+
+                <div id="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="#none">PRODUCT</a>
+                            <div class="product">
+                                <ul class="depth2">
+                                    <li>승용차용</li>
+                                    <li>SUV용</li>
+                                    <li>전기차용</li>
+                                    <li>VAN & 소형트럭용</li>
+                                    <li>겨울용</li>
+                                    <li>레이싱용</li>
+                                    <li>신차용</li>
+                                    <li>전용</li>
+                                    <li>Awards</li>
+                                    <li>Magazine Test</li>
+                                    <li>NEXEN Technology</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">SERVICE</a>
+                            <div class="service">
+                                <ul class="depth2_2">
+                                    <li>내 차에 맞는 타이어</li>
+                                    <li>판매점 찾기</li>
+                                    <li>보증제도 안내</li>
+                                    <li>고객 문의</li>
+                                    <li>무상점검</li>
+                                    <li>넥스트레벨</li>
+                                    <li>타이어테크</li>
+                                    <li>운영인모집</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">INFORMATION</a>
+                            <div class="infor">
+                                <ul class="depth2_3">
+                                    <li>타이어 정보</li>
+                                    <li>타이어 에너지 소비효율등급제</li>
+                                    <li>소음도 신고 및 등급표시제</li>
+                                    <li>소셜 컨텐츠 룸</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">COMMUNICATION</a>
+                            <div class="commu">
+                                <ul class="depth2_4">
+                                    <li>브랜드 소개</li>
+                                    <li>스포츠마케팅</li>
+                                    <li>모터스포츠</li>
+                                    <li>VAD & Exhibition</li>
+                                    <li>다운로드</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">NEWS & EVENT</a>
+                            <div class="news">
+                                <ul class="depth2_5">
+                                    <li>뉴스</li>
+                                    <li>이벤트</li>
+                                    <li>웹진</li>
+                                    <li>뉴스레터</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#none">NEXENTIRE</a>
+                            <div class="nexentire">
+                                <ul class="depth2_6">
+                                    <li>기업정보</li>
+                                    <li>ESG REPORT</li>
+                                    <li>동반성장</li>
+                                    <li>사회공헌</li>
+                                    <li>투자정보</li>
+                                    <li>채용정보</li>
+                                    <li>찾아오시는 길</li>
+                                    <li>더 넥센유니버시티</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav_right">
+                    <ul>
+                        <li>
+                            <a href="#none">Login</a>
+                        </li>
+                        <li class="nrm">
+                            <a href="#none">Membership</a>
+                        </li>
+                        <li class="nrg">
+                            <a href="#none">Global Site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="section_center">
+                <div class="item">
+                    <video muted autoplay playsinline>
+                        <source src="https://nexen-front.s3.ap-northeast-2.amazonaws.com/kr/kr_05.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">
+                    <video muted autoplay playsinline>
+                        <source src="https://nexen-front.s3.ap-northeast-2.amazonaws.com/kr/kr_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">
+                    <video muted autoplay playsinline>
+                        <source src="https://nexen-front.s3.ap-northeast-2.amazonaws.com/kr/kr_03.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video_arrow">
+                    <a href="#none" class="vprev"><img src="./img/carousel_nav_prev.png" alt="vprev"></a>
+                    <a href="#none" class="vnext"><img src="./img/carousel_nav_next.png" alt="vnext"></a>
+                </div>
+                <div class="car_find">
+                    <div class="num">
+                        <img class="numi1" src="./img/search3.png" width="50" height="50" alt="search1">
+                        <a href="#none" class="tiresearch">TIRE SEARCH</a>
+                        <a href="#none" class="cf_w">차량번호로 찾기</a>
+                    </div>
+                    <div class="car">
+                        <i class="xi-car xi-4x"></i>
+                        <a href="#none" class="tiresearch">TIRE SEARCH</a>
+                        <a href="#none" class="cf_w">차종으로 찾기</a>
+                    </div>
+                    <div class="size">
+                        <img class="numi2" src="./img/search1.png" width="50" height="50" alt="search3">
+                        <a href="#none" class="tiresearch">TIRE SEARCH</a>
+                        <a href="#none" class="cf_w">사이즈로 찾기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 모바일 찾기 섹션 -->
+        <div class="find_section">
+        </div>
+
+        <div id="container">
+            <div class="container_title">
+                High Quality, High Performance
+            </div>
+            <div class="conline2 hidden">null</div>
+            <div class="container_img_wrap cf">
+                <div class="container_img1">
+                    <img src="./img/container_img.jpg" alt="container_img" class="cih1">
+                    <img src="./img/container_img_logo.png" alt="container_img_logo" class="container_logo1">
+                    <span class="container_1_t">프리미엄에 혁신을 더하다</span>
+                    <a href="#none">READ MORE</a>
+                </div>
+                <div class="container_img2">
+                    <img src="./img/container_img2.jpg" alt="container_img2" class="cih2">
+                    <img src="./img/container_img_logo2.png" alt="container_img_logo2" class="container_logo2">
+                    <span class="container_2_t">소리없이 편안 하니까!</span>
+                    <a href="#none">READ MORE</a>
+                </div>
+                <div class="container_img3">
+                    <img src="./img/container_img3.jpg" alt="container_img3" class="cih3">
+                    <img src="./img/container_img_logo3.png" alt="container_img_logo3" class="container_logo3">
+                    <span class="container_3_t">국내 최고 수준의 마일리지 성능을 가진 사계절용 타이어</span>
+                    <a href="#none">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div id="main_block">
+            <div class="main_block_title">
+                <ul>
+                    <li>Product</li>
+                    <li>넥센타이어의 다양한 제품을 확인해 보세요</li>
+                </ul>
+            </div>
+            <div class="main_block_middle">
+                <div class="mbm mbm01">
+                    <div class="mbm_t">승용차용</div>
+                    <a href="#none">자세히보기</a>
+                </div>
+                <div class="mbm mbm02">
+                    <div class="mbm_t">SUV용</div>
+                    <a href="#none">자세히보기</a>
+                </div>
+                <div class="mbm mbm03">
+                    <div class="mbm_t">전기차용</div>
+                    <a href="#none">자세히보기</a>
+                </div>
+                <div class="mbm mbm04">
+                    <div class="mbm_t">겨울용</div>
+                    <a href="#none">자세히보기</a>
+                </div>
+            </div>
+            <div class="main_block_bottom">
+                <ul>
+                    <li>Why NEXEN TIRE</li>
+                    <li>우수한 기술력과 노하우를 바탕으로<br>
+                        세계적으로 인정받고 있는 넥센타이어를 확인해 보세요</li>
+                </ul>
+            </div>
+            <div class="main_block_w">
+                <div class="main_block_why">
+                    <div class="img"><img src="./img/mainblock_w_1.jpg" alt="mainblock_w_1" width="430"></div>
+                    <div class="main_block_t">
+                        <div class="t1">세계로 도약하는</div>
+                        <div class="t2">NEXEN TIRE STORY</div>
+                    </div>
+                    <a class="readmore" href="#none">READ MORE</a>
+                </div>
+                <div class="main_block_why">
+                    <div class="img"><img src="./img/mainblock_w_2.jpg" alt="mainblock_w_2" width="430"></div>
+                    <div class="main_block_t">
+                        <div class="t1">미래를 여는</div>
+                        <div class="t2">NEXEN TECHNOLOGY</div>
+                    </div>
+                    <a class="readmore" href="#none">READ MORE</a>
+                </div>
+                <div class="main_block_why">
+                    <div class="img"><img src="./img/mainblock_w_3.jpg" alt="mainblock_w_3" width="430"></div>
+                    <div class="main_block_t">
+                        <div class="t1">최상의 품질을 인정 받은</div>
+                        <div class="t2">MAGAZINE TEST</div>
+                    </div>
+                    <a class="readmore" href="#none">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div id="service">
+            <div class="serivce-wrap">
+                <a class="seriv" href="#none">
+                    <div class="ser_">SERVICE</div>
+                    <div class="img"><img src="./img/service1.jpg" alt="service1" width="640"></div>
+                    <div class="ser_name"><span>명품보증서 등록 ></span></div>
+                </a>
+                <a class="seriv" href="#none">
+                    <div class="ser_">SERVICE</div>
+                    <div class="img"><img src="./img/service2.jpg" alt="service2" width="640"></div>
+                    <div class="ser_name"><span>타이어테크 ></span></div>
+                </a>
+                <a class="seriv" href="#none">
+                    <div class="ser_">SERVICE</div>
+                    <div class="img"><img src="./img/service3.jpg" alt="service3" width="640"></div>
+                    <div class="ser_name"><span>더 넥센유니버시티 투어 신청 ></span></div>
+                </a>
+                <a class="seriv" href="#none">
+                    <div class="ser_">SPORTS MARKETING</div>
+                    <div class="img"><img src="./img/service4.jpg" alt="service4" width="640"></div>
+                    <div class="ser_name"><span>Manchester City ></span></div>
+                </a>
+                <a class="seriv" href="#none">
+                    <div class="ser_">SPORTS MARKETING</div>
+                    <div class="img"><img src="./img/service5.jpg" alt="service5" width="640"></div>
+                    <div class="ser_name"><span>넥센 세인트나인 마스터즈 ></span></div>
+                </a>
+                <a class="seriv" href="#none">
+                    <div class="ser_">SPORTS MARKETING</div>
+                    <div class="img"><img src="./img/service6.jpg" alt="service6" width="640"></div>
+                    <div class="ser_name"><span>NEXEN MotorSports ></span></div>
+                </a>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <div class="footer_left">
+                        <ul>
+                            <li><a href="#none">고객 문의</a></li>
+                            <li><a href="#none">명품보증서등록</a></li>
+                            <li><a href="#none">타이어 찾기</a></li>
+                            <li><a href="#none">판매점 찾기</a></li>
+                            <li><a href="#none">넥스트레벨</a></li>
+                            <li><a href="#none">이용약관</a></li>
+                            <li><a href="#none">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_right">
+                        <select id="family" onchange="">
+                            <option value="">Family Site</option>
+                            <option value="">넥스트레벨</option>
+                            <option value="">타이어테크</option>
+                            <option value="">㈜넥센</option>
+                            <option value="">KNN</option>
+                            <option value="">네이버 블로그</option>
+                            <option value="">페이스북</option>
+                            <option value="">유튜브</option>
+                            <option value="">네이버 포스트</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line hidden">null</div>
+                <div class="footer_bottom">
+                    <div class="footer_b_left">
+                        <ul class="f_info1">
+                            <li>사업자등록번호<i class="xi-minus-thin xi-rotate-90"></i> </li>
+                            <li>대표번호<i class="xi-minus-thin xi-rotate-90"></i> </li>
+                            <li>이메일 문의하기</li>
+                        </ul>
+                        <ul class="f_info2">
+                            <li>렌탈 서비스<i class="xi-minus-thin xi-rotate-90"></i></li>
+                            <li>고객만족센터<i class="xi-minus-thin xi-rotate-90"></i></li>
+                            <li>서비스센터 (서울, 부산)</li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/footer_logo.png" width="200" alt="footer_logo">
+                    </div>
+                </div>
+                <div class="line hidden">null</div>
+                <div class="footer_bottom2">
+                    Copyright ⓒ 2023 Nexen tire. all rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모바일 헤더 -->
+    <div class="mo_header">
+        <a href="index.html"><img src="./img/logo.png" width="180" alt="logo.png"></a>
+    </div>
+    <!-- 모바일 햄버거 -->
+    <a href="#none" class="ham">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </a>
+    <!-- 모바일 쉐도우 -->
+    <div class="bg-shadow"></div>
+    <!-- 모바일 메뉴 -->
+    <div class="mo_menu">
+        <ul>
+            <li><a href="#none">PRODUCT</a>
+                <ul class="mo_sub">
+                    <li>승용차용</li>
+                    <li>SUV용</li>
+                    <li>전기차용</li>
+                    <li>VAN & 소형트럭용</li>
+                    <li>겨울용</li>
+                    <li>레이싱용</li>
+                    <li>신차용</li>
+                    <li>전용</li>
+                    <li>Awards</li>
+                    <li>Magazine Test</li>
+                    <li>NEXEN Technology</li>
+                </ul>
+            </li>
+            <li><a href="#none">SERVICE</a>
+                <ul class="mo_sub">
+                    <li>내 차에 맞는 타이어</li>
+                    <li>판매점 찾기</li>
+                    <li>보증제도 안내</li>
+                    <li>고객 문의</li>
+                    <li>무상점검</li>
+                    <li>넥스트레벨</li>
+                    <li>타이어테크</li>
+                    <li>운영인모집</li>
+                </ul>
+            </li>
+            <li><a href="#none">INFORMATION</a>
+                <ul class="mo_sub">
+                    <li>타이어 정보</li>
+                    <li>타이어 에너지 소비효율등급제</li>
+                    <li>소음도 신고 및 등급표시제</li>
+                    <li>소셜 컨텐츠 룸</li>
+                </ul>
+            </li>
+            <li><a href="#none">COMMUNICATION</a>
+                <ul class="mo_sub">
+                    <li>브랜드 소개</li>
+                    <li>스포츠마케팅</li>
+                    <li>모터스포츠</li>
+                    <li>VAD & Exhibition</li>
+                    <li>다운로드</li>
+                </ul>
+            </li>
+            <li><a href="#none">NEWS & EVENT</a>
+                <ul class="mo_sub">
+                    <li>뉴스</li>
+                    <li>이벤트</li>
+                    <li>웹진</li>
+                    <li>뉴스레터</li>
+                </ul>
+            </li>
+            <li><a href="#none">NEXENTIRE</a>
+                <ul class="mo_sub">
+                    <li>기업정보</li>
+                    <li>ESG REPORT</li>
+                    <li>동반성장</li>
+                    <li>사회공헌</li>
+                    <li>투자정보</li>
+                    <li>채용정보</li>
+                    <li>찾아오시는 길</li>
+                    <li>더 넥센유니버시티</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#none" class="mo_close">×</a>
+    </div>
+</body>
+
+</html>
