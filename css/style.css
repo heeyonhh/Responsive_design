@@ -13,12 +13,18 @@
 }
 
 html{
+    max-width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul li{
