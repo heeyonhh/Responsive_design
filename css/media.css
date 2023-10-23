@@ -26,18 +26,16 @@
 
     /* 비디오 */
     section{
-        height: 827px;
+        height: 818px;
     }
     section #section_center{
-        height: 827px;
+        height: 818px;
     }
-    section #section_center .item video{
-        height: 827px;
-    }
+
     section #section_center .item:first-child,
     section #section_center .item:nth-child(2),
     section #section_center .item:nth-child(3){
-        height: 827px;
+        height: 818px;
     }
 
     /* 콘테이너 */
