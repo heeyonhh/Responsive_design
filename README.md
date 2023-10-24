@@ -1,5 +1,9 @@
 # 넥센타이어 반응형 웹사이트
 
+## https://heeyonhh.github.io/Responsive_design/
+
+## https://github.com/heeyonhh/Responsive_design
+
 HTML, CSS, Javascript를 사용하여 만든 반응형 웹 표준 사이트입니다.
 
 넥센타이어를 고른 이유는 동적인 슬라이드 배너, 동영상 슬라이드 배너, 탭메뉴 등
